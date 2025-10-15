@@ -1,0 +1,44 @@
+body {     
+    background-color: black;     
+    color: white;     
+    margin: 0;     
+    padding: 0; 
+}
+
+/* ✅ Center grid on screen */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  justify-content: center;  /* center vertically */
+  min-height: 80vh;
+}
+
+/* Each row in the grid */
+.grid-row {
+  display: flex;
+}
+
+/* Controls for buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(93, 20, 129);
+}

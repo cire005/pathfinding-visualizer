@@ -1,0 +1,52 @@
+/* Base node style */
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #222;
+  background-color: darkslateblue;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+/* Special node types */
+.node-start {
+  background-color: green;
+}
+
+.node-finish {
+  background-color: red;
+}
+
+.node-wall {
+  background-color: white;
+}
+
+/* Algorithm animations */
+.node-visited {
+  background-color: rgb(93, 20, 129);
+  animation: visited-animation 0.3s ease-in-out;
+}
+
+.node-path {
+  background-color: yellow;
+  animation: path-animation 0.3s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes visited-animation {
+  from {
+    background-color: rgb(150, 144, 196);
+  }
+  to {
+    background-color: rgb(93, 20, 129);
+  }
+}
+
+@keyframes path-animation {
+  from {
+    background-color: lightyellow;
+  }
+  to {
+    background-color: yellow;
+  }
+}
